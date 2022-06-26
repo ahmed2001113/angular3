@@ -1,0 +1,35 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+    <div class="item" data-class="all" >
+    <a><img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"></a>
+    <h6>All Products</h6>
+</div>
+<div class="item" data-class="clothis" >
+    <a><img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"></a>
+    <h6>Electronics</h6>
+</div>
+<div class="item" data-class="electronics" >
+    <a><img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100"></a>
+    <h6>Fashions</h6>
+</div>
+
+<div class="item" data-class="jewelery" >
+    <a><img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"></a>
+    <h6>Jewllery</h6>
+</div>
+
+</div>
+</div>
+<div class="container"> 
+<div class="row">
+<ng-container *ngFor="let p of products"> 
+    <div  class="card col-md-3" >
+        <img [src]="p.image" alt="image">
+        <h5 style="white-space:nowwrap; overflow:hidden; text-overflow:ellipsis; max-width:100ch;">{{p.title}}</h5>
+        <p style="white-space:nowwrap; overflow:hidden; text-overflow:ellipsis; max-width:100ch;">{{p.description}}</p>
+        <p style="white-space:nowwrap; overflow:hidden; text-overflow:ellipsis; max-width:100ch;"><strong>Price:</strong>${{p.price}}</p>
+       <button class="btn btn-primary">Add To Card</button> 
+    </div>
+</ng-container>
+</div>
+</div>
